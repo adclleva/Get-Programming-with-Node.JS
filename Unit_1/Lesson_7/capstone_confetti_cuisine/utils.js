@@ -9,6 +9,7 @@ module.exports = {
         res.writeHead(httpStatus.INTERNAL_SERVER_ERROR, contentTypes.html);
         res.end("There was an error serving content!");
       }
+      res.end(data);
     });
   },
 };
