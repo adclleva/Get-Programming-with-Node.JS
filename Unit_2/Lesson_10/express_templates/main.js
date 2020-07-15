@@ -18,6 +18,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/name", homeController.respondWithName);
+app.get("/name/:myName", homeController.respondWithName);
 app.get("/items/:vegetable", homeController.sendReqParam);
 
 app.post("/", (req, res) => {
